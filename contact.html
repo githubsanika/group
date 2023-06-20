@@ -1,0 +1,655 @@
+<!DOCTYPE html>
+<html>  
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+      @media only screen and (max-width: 600px) {
+  body {
+    background-color: #f6f5f7;
+font-family: 'Open Sans', sans-serif;
+margin-bottom: 50px;
+  }
+}
+    </style>
+  <title>Contact</title>
+    <link rel="icon" type="image/x-icon" href="../dirt remover/dirt img/dirt_logo-removebg-preview.png">
+  <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+  *{
+              padding: 0px;
+              margin: 0px;
+          }
+          .header{
+              position:sticky;
+              top:0px;
+              background-image: linear-gradient( 90deg , rgb(231, 113, 9) 100px, rgba(228, 172, 58, 0.937));
+              border-bottom: 4px solid brown ;
+              padding-right:20px;
+              padding-left:50px ;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+          }
+          
+          @media (min-width: 1500px) {
+          header{
+              padding-right: 10%;
+              padding-left: calc( 10% - 20px);
+          }
+          }
+    </style>
+
+
+
+<style>
+
+footer {
+  background-color: #414141;
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+  margin-top: 50px;
+  bottom:container-fluid;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* footer left*/
+
+.footer .footer-left {
+  width: 33%;
+  padding-right: 15px;
+}
+
+.footer .about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .icons {
+  margin-top: 25px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+/* footer center*/
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #ea6a15;
+  text-decoration: none;
+}
+
+
+/* footer right*/
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: #ff8000;
+}
+
+.footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: #ff9500;
+}
+
+.footer .name {
+  color: #0099ff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
+</style>
+
+</style>
+<style>
+
+  .wrapper {
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  } 
+  ul {
+    list-style: none;
+  } 
+ ul li {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: #e59500;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  } 
+  ul li .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+  } 
+  ul li.facebook{
+    background: #3b5998;
+  } 
+  ul li.twitter{
+    background: #00aced;
+  } 
+  ul li.instagram{
+    background: #cb2c39;
+  } 
+   
+  ul li.whatsapp{
+    background: #4dc247;
+  } 
+  
+  </style>
+<style>
+  
+  @media (max-width: 767px) {
+
+}
+img
+{
+  padding: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+ 
+  [class*="header"]
+  [class*="container-fluid"]
+  [class*="text-align: text-justify: ;;"] 
+
+  {
+    width: 100%; 
+  }
+  
+}
+@media screen  and (max-width: 300px)
+{
+  [class*="col-sm-3"]
+  {
+    font-family: justify;
+  }
+}
+.pic{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+</style>   
+</style>
+<style>
+  .blink-1 {
+    animation-name: blink;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    text-decoration-color: #000;
+   
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  </style>
+  <script>
+  function blinker() {
+    $('.jquery_blink').fadeOut(500);
+    $('.jquery_blink').fadeIn(500);
+  }
+  
+  
+  setInterval(blinker, 1000);
+  </script>
+</head>
+    <body background="../dirt remover/2 (1).png" class="pic">
+    
+    
+      <nav class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top header">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#"><img src="../dirt remover/dirt img/dirt_logo-removebg-preview.png"  height="80" width="100"></a>
+          <center>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+        
+          <div class="collapse navbar-collapse"  id="collapsibleNavbar">
+            <div class="navbar-nav">
+             
+              <li class="nav-item">
+                <a class="nav-link" style="color:#0a0a0a ;" href="dirt remover/index.html"><h4>Home</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:#060606 ;" href="../dirt remover/about.html"><h4>About</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:#080808 ;" href="../dirt remover/services.html"><h4>Services</h4></a>
+              </li>    
+              <li class="nav-item">
+                <a class="nav-link" style="color:#070707 ;" href="../dirt remover/contact.html"><h4>Contact</h4></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="color:brown ;" href="../dirt remover/services.html"><h4 class="blink-1">Book Now!</h4><br></a>
+              </li> 
+            </div>
+          </div></center>
+        </div>
+      </nav>
+      
+          <br>
+          
+          <div class="container-fluid mt-4">
+            <center><h1 style="color:brown;">We Provide Our Best Cleaning Services for You in Nagpur</h1></center>
+          </div>
+          <br>
+          <br>
+          <br>
+
+         
+
+
+ 
+          <style>
+          .contact-info {
+          display: inline-block;
+          width: 100%;
+          text-align: center;
+          margin-bottom: 10px;
+          }
+          .contact-info-icon {
+          margin-bottom: 15px;
+          }
+          .contact-info-item {
+          background: #851200;
+          padding: 30px 0px;
+          height: 180px;
+          width: 320px;
+          }
+          .contact-page-sec .contact-page-form h2 {
+          color: #851200;
+          text-transform: capitalize;
+          font-size: 22px;
+          font-weight: 700;
+          width: auto;
+          }
+          
+        
+         
+          .contact-page-form.contact-form input[type="submit"] {
+          background: #851200;
+          width: 100px;
+          border-color: #851200;
+          }
+          .contact-info-icon i {
+          font-size: 48px;
+          color: #d8840e;
+          }
+          .contact-info-text p{margin-bottom:0px;}
+          .contact-info-text h2 {
+          color: #fff;
+          font-size: 18px;
+          text-transform: capitalize;
+          font-weight: 600;
+          margin-bottom: 10px;
+          }
+          .contact-info-text span {
+          color: #ffffff;
+          font-size: 16px;
+          
+          display: inline-block;
+          width: 100%;
+          }
+          
+          .contact-page-form input {
+          background: #f9f9f9 none repeat scroll 0 0;
+          border: 1px solid #000000;
+          margin-bottom: 20px;
+          padding: 12px 16px;
+          width: 100%;
+          border-radius: 4px;
+          }
+          
+          
+          .single-input-field textarea {
+          background: #f9f9f9 none repeat scroll 0 0;
+          border: 1px solid #080808;
+          width: 70%;
+          height: 120px;
+          padding: 12px 16px;
+          border-radius: 4px;
+          }
+          .single-input-fieldsbtn input[type="submit"] {
+          background: #fda40b none repeat scroll 0 0;
+          color: #fff;
+          display: inline-block;
+          font-weight: 600;
+          padding: 10px 0;
+          text-transform: capitalize;
+          width: 150px;
+          margin-top: 20px;
+          font-size: 16px;
+          }
+          .single-input-fieldsbtn input[type="submit"]:hover{background:#060606;transition: all 0.4s ease-in-out 0s;border-color:#d1d8e0}
+          .single-input-field  h4 {
+          color: #fffcfc;
+          text-transform: capitalize;
+          font-size: 14px;
+          }
+        
+          
+          
+          
+          
+          
+          </style>
+
+
+
+
+<section class="contact-page-sec">
+<div class="container">
+
+<div class="row">
+  <div class="col-md-8">
+    <div class="contact-page-form" method="post">
+      <h2>Get in Touch</h2> 
+      <form action="contact-mail.php" method="post">
+        <div class="column">
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="single-input-field">
+            <input type="text" placeholder="Your Name" name="name"/>
+          </div>
+        </div>  
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="single-input-field">
+            <input type="email" placeholder="E-mail" name="email" required/>
+          </div>
+        </div>                              
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="single-input-field">
+            <input type="text" placeholder="Phone Number" name="phone"/>
+          </div>
+        </div>  
+        <div class="col-md-6 col-sm-6 col-xs-12">
+          <div class="single-input-field">
+            <input type="text" placeholder="Subject" name="subject"/>
+          </div>
+        </div>                
+        <div class="col-md-12 message-input">
+          <div class="single-input-field">
+            <textarea  placeholder="Write Your Message" name="message"></textarea>
+          </div>
+        </div>                                                
+        <div class="single-input-fieldsbtn">
+          <input type="submit" value="Send Now"/>
+        </div>                          
+      </div>
+      </form>   
+    </div>      
+  </div>
+
+
+
+  <div class="col-md-4"> 
+    <div class="column">
+
+
+      <div class="col-md-4">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa fa-map-marker"></i>
+            </div>
+            <div class="contact-info-text">
+              <h2>address</h2>
+              <span>PLot No: 158/B,Yogeshwar Nagar,<br>Nagpur-440033 </span> 
+             
+            </div>
+          </div>            
+        </div>          
+      </div>     
+      
+      
+      
+      <div class="col-md-4">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa fa-envelope"></i>
+            </div>
+            <div class="contact-info-text">
+              <h2>E-mail</h2>
+              <p><mailto:span>dirtremovernagpur@gmail.com</span> </p>
+             
+            </div>
+          </div>            
+        </div>                
+      </div>      
+      
+      
+
+      <div class="col-md-4">
+        <div class="contact-info">
+          <div class="contact-info-item">
+            <div class="contact-info-icon">
+              <i class="fa fa-phone-square"></i>
+            </div>
+            <div class="contact-info-text">
+              <h2>Phone Number</h2>
+              <span>+91 9822561899</span>
+             
+            </div>
+          </div>            
+        </div>          
+      </div>     
+      
+      
+    </div>
+
+
+
+
+
+     
+  </div>        
+</div>
+</div>
+
+
+
+
+
+
+
+</html>
+          </html>
+          <body>
+       
+            <div class="wrapper" >
+          <ul>
+            <li class="facebook" >
+              <i class="fa fa-facebook" aria-hidden="true"></i>
+         
+            </li>
+                <li class="twitter">
+              <i class="fa fa-twitter" aria-hidden="true"></i>
+            
+            </li>
+            
+            <li class="instagram">
+              <i class="fa fa-instagram" aria-hidden="true"></i>
+            
+            </li>
+            
+                <li class="whatsapp">
+              <i class="fa fa-whatsapp" aria-hidden="true"></i>
+            
+            </li>
+          </ul>
+        </div>
+        </body>
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+          <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+        
+          </a>
+          <h1 style="font-family:Bodoni FLF ;color: orangered;" align="center">Believe in the Best!</h1>
+          </div> 
+          
+          <footer class="footer">
+            <div class="footer-left col-md-6 col-sm-6 col-xs-12">
+              <p class="about">
+                <span> About Us</span> At DIRT REMOVER our endeavor is to provide you customized solutions,where scope, 
+                level and the combination of services are carefully adjusted to our customers' specific requirment
+              ,thereby creating a synergy between our people,place,process and technology 
+              </p>
+              <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100087893591860"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.instagram.com/dirt_remover_nagpur_/"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="footer-center col-md-6 col-sm-6 col-xs-12">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p style="color: white;"><span> <b>158/B,Yogeshwar Nagar </b> </span> Nagpur-440033
+              </div>
+              <div>
+                <i class="fa fa-phone"></i>
+                <p> (+91) 9850318506</p><br>
+              </div>
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#"> dirtremovernagpur@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="footer-right col-md-6 col-sm-6 col-xs-12">
+              <h2> Dirt Remover<span> <img src="../dirt remover/dirt img/dirt_logo-removebg-preview.png" width="150px" height="100px"  alt=""></span></h2>
+              <p class="menu">
+                <a href="../dirt remover/home.html"> Home</a> &nbsp;
+                <a href="../dirt remover/about.html"> About</a>&nbsp;
+                <a href="../dirt remover/services.html"> Services</a>&nbsp;       
+                <a href="../dirt remover/contact.html"> Contact</a>&nbsp;
+              </p> 
+            </div>
+          </footer>
+    </body>
+</html>

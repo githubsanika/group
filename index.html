@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{margin: 0;padding: 0;overflow-x: hidden}
+      @media only screen and (max-width: 600px) {
+  body {
+    background-color: #f6f5f7;
+font-family: 'Open Sans', sans-serif;
+margin-bottom: 50px;
+  }
+}
+    </style>
+    <title>home</title>
+    <link rel="icon" type="image/x-icon" href="../dirt remover/dirt img/dirt_logo-removebg-preview.png">
+    <style>
+  *{
+              padding: 0px;
+              margin: 0px;
+          }
+          .header{
+              position:sticky;
+              top:0px;
+              background-image: linear-gradient( 90deg , rgb(231, 113, 9) 100px, rgba(228, 172, 58, 0.937));
+              border-bottom: 4px solid brown ;
+              padding-right:20px;
+              padding-left:50px ;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+          }
+          
+          @media (min-width: 1500px) {
+          header{
+              padding-right: 10%;
+              padding-left: calc( 10% - 20px);
+          }
+          }
+        </style>
+    <style>
+* {
+box-sizing: border-box;
+}
+
+
+
+.a {
+  box-shadow: inset 0 0 0 0 #000000;
+  color: #010709;
+  margin: 0 -.25rem;
+  padding: 0 .25rem;
+  transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+.a:hover {
+  box-shadow: inset 1400px 0 0 0 #000000;
+  color: white;
+}
+
+
+
+body {
+background-color: #f6f5f7;
+font-family: 'Open Sans', sans-serif;
+margin-bottom: 50px;
+}
+
+.text-center {
+text-align: center;
+}
+
+.pricing-box-container {
+
+display: flex;
+align-items: center;
+justify-content: center;
+flex-wrap: wrap;
+}
+
+.pricing-box {
+
+background-color: rgb(233, 92, 32);
+box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+border-radius: 4px;
+flex: 1;
+padding: 0 30px 30px;
+margin: 2%;
+min-width: 250px;
+max-width: 350px;
+}
+
+.pricing-box h5 {
+text-transform: uppercase;
+}
+
+.price {
+margin: 24px 0;
+font-size: 36px;
+font-weight: 900;
+}
+
+.price sub, .price sup {
+font-size: 16px;
+font-weight: 100;
+}
+
+.features-list {
+padding: 0;
+list-style-type: none;
+
+}
+
+.features-list li {
+font-weight: 100;
+padding: 12px 0;
+font-weight: 100;
+}
+
+.features-list li:not(:last-of-type) {
+border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.btn-primary {
+border-radius: 25px;
+border: none;
+background-color: #EC1362;
+color: #ffffff;
+cursor: pointer;
+padding: 10px 15px;
+margin-top: 20px;
+text-transform: uppercase;
+transition: all 0.1s ease-in-out;
+}
+
+.btn-primary:hover {
+box-shadow: 0px 2px 15px 0px rgba(0,0,0,0.5);
+transform: translateY(-3px);
+}
+
+.pricing-box-bg-image {
+
+background-size: cover;
+background-position: center center;
+color: #ffffff;
+}
+
+.pricing-box-bg-image .features-list li {
+border-bottom-color: rgb(4, 0, 0);
+}
+
+.pricing-box-bg-image .btn-primary {
+background-color: #ffffff;
+color: #000;
+}
+
+
+      *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: #fcfcfc;
+    font-family: sans-serif;
+}
+
+</style>
+ </style>
+</head>
+<head>
+<style>
+.y-us-section {
+    padding: 82px 0 82px;
+}
+.y-us-head {
+    text-align: center;
+    margin: 0 0 91px;
+}
+.y-us-title h2 {
+    color: #000;
+    font-size: 30px;
+    letter-spacing: 0;
+    line-height: 32px;
+    text-transform: uppercase;
+    margin-bottom: 6px;
+}
+.y-us-title > p {
+    color: #777777;
+    line-height: 22px;
+}
+.y-us-title-border {
+    background: #ffae11 none repeat scroll 0 0;
+    border-radius: 2px;
+    display: inline-block;
+    height: 3px;
+    position: relative;
+    width: 50px;
+}
+.service-3 .service-box {
+    margin-bottom: 18px;
+}
+.service-3 .service-box .iconset {
+    float: left;
+    text-align: center;
+    width: 25%;
+}
+.service-3 .service-box .iconset i {
+    color: #000;
+    font-size: 44px;
+}
+.service-3 .service-box .y-us-content {
+    float: left;
+    width: 75%;
+    color: #000;
+}
+service-3 .service-box .y-us-content h4 {
+    color: #3a3a3a;
+    font-size: 18px;
+    letter-spacing: 0;
+    line-height: 22px;
+    margin: 14px 0 12px;
+    text-transform: uppercase;
+}
+.service-3 .service-box .y-us-content p {
+    color: #777777;
+    font-size: 13px;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+.icon {
+    color : #f4b841;
+    padding:0px;
+    font-size:40px;
+    border: 1px solid #fdb801;
+    border-radius: 100px;
+    color: #fdb801;
+    font-size: 28px;
+    height: 70px;
+    line-height: 70px;
+    text-align: center;
+    width: 70px;
+}
+
+
+span {
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    margin: 6px;
+  
+  }
+</style>
+<style>
+  .c-button {
+  display: block;
+  font-size: 64px;
+  font-weight: 700;
+  padding: 16px 64px;
+  border: 8px solid #333;
+  position: relative;
+  transition: color .3s;
+}
+
+.c-button::after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 0;
+  background-color: #4B7CB6;
+  top: -2px;
+  left: -2px;
+  bottom: -2px;
+  z-index: -1;
+  transition: width .3s;
+}
+
+.c-button:hover {
+  color: #fff;
+}
+.c-button:hover::after {
+  width: calc(100% + 4px);
+}
+
+p {
+  color: inherit;
+  text-decoration: none;
+}
+
+* {
+  box-sizing: border-box;
+}
+</style>
+<style>
+.example_c {
+color: #494949 !important;
+
+text-decoration: none;
+background: #ffffff;
+
+border: 4px solid #494949 !important;
+display:contents;
+transition: all 0.4s ease 0s;
+}
+.example_c:hover {
+color: #ffffff !important;
+background: #f6b93b;
+border-color: #f6b93b !important;
+display: inline-block;
+transition: all 0.4s ease 0s;
+}
+
+</style>
+<style>
+  .example_e {
+border: none;
+background: #404040;
+color: #ffffff !important;
+font-weight: 100;
+padding: 20px;
+text-transform: uppercase;
+border-radius: 6px;
+display: inline-block;
+transition: all 0.3s ease 0s;
+}
+.example_e:hover {
+color: #404040 !important;
+font-weight: 700 !important;
+letter-spacing: 3px;
+background: none;
+
+transition: all 0.3s ease 0s;
+}
+</style>
+<style>
+ 
+.container{
+  display: inline-block;
+}
+.typed-out{
+  overflow: hidden;
+  
+  white-space: nowrap;
+  animation: 
+    typing 4s forwards;
+  font-size: 1.6rem;
+  width: 0;
+}
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+</style>
+<style>
+footer {
+  background-color: #414141;
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* footer left*/
+
+.footer .footer-left {
+  width: 33%;
+  padding-right: 15px;
+}
+
+.footer .about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .icons {
+  margin-top: 25px;
+}
+.footer .icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+/* footer center*/
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #ea6a15;
+  text-decoration: none;
+}
+
+
+/* footer right*/
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: #ff8000;
+}
+
+.footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: #ff9500;
+}
+
+.footer .name {
+  color: #0099ff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
+</style>
+</style>
+</style>
+
+<style>
+
+  .wrapper {
+    position: fixed;
+    top: 80%;
+    left: 90%;
+    transform: translate(-50%, -50%);
+  } 
+  ul {
+    list-style: none;
+  } 
+ ul li {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: #e59500;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  } 
+  ul li .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+  } 
+  ul li.facebook{
+    background: #3b5998;
+  } 
+  ul li.twitter{
+    background: #00aced;
+  } 
+  ul li.instagram{
+    background: #cb2c39;
+  } 
+   
+  ul li.whatsapp{
+    background: #4dc247;
+  } 
+  
+  </style>
+<style>
+  @media (max-width: 767px) {
+
+}
+@media only screen and (max-width: 768px) {
+  [class*="header"]
+  [class*="container"]
+  [class*="text-align: text-justify: ;;"] 
+  {
+    width: 100%;   
+  } 
+}
+@media screen  and (max-width: 300px)
+{
+  [class*="col-sm-3"]
+  {
+    font-family: justify;
+  }
+}
+.pic{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+</style>
+<style>
+.blink-1 {
+  animation-name: blink;
+  animation-timing-function: linear;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  text-decoration-color: #000;
+ 
+}
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+</style>
+
+<script>
+function blinker() {
+  $('.jquery_blink').fadeOut(500);
+  $('.jquery_blink').fadeIn(500);
+}
+
+
+setInterval(blinker, 1000);
+</script>
+
+<p>
+  <span class="jquery_blink">Wow, its a jQuery blinking link!</span>
+</p>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<nav class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top header">
+  <div class="container">
+    <a class="navbar-brand" href="#"><img src="../dirt remover/dirt img/dirt_logo-removebg-preview.png"  height="80" width="100"></a>
+    <center>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse"  id="collapsibleNavbar">
+      
+      <div class="navbar-nav">
+        
+        <li class="nav-item">
+          <a class="nav-link" style="color:#0a0a0a ;" href="../dirt remover/index.html"><h4>Home</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:#060606 ;" href="../dirt remover/about.html"><h4>About</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:#080808 ;" href="../dirt remover/services.html"><h4>Services</h4></a>
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link" style="color:#070707 ;" href="../dirt remover/contact.html"><h4>Contact</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:brown ;" href="../dirt remover/services.html"><h4 class="blink-1">Book Now!</h4><br></a>
+        </li> 
+      </div>
+    </div></center>
+  </div>
+</nav>
+<div class="col-md-12 container-fluid">
+  <video autoplay loop muted playsinline src="../dirt remover/We love to clean and it shows! (1).mp4" style="width:100% ; height: 60%;"></video> 
+</div>
+  
+ 
+ 
+  <br>
+
+<div class="container-fluid mt-3" >
+ <center> <h2 style="color: brown; text-shadow:  0 0 25px orange, 0 0 5px orangered; ">“Excuse the mess, but we live here.”</h2></center>
+</div>
+
+<div class="container my-5" >
+  <div class="row">
+    <div class="col-md-6 text-center">
+      <video autoplay loop muted playsinline src="../dirt remover/dirt img/production 2.mp4" style="width:80% ;"></video> 
+    </div>
+    <div class="col-md-6 pt-3" >
+      <p class="text-secondary" style="line-height: 2;text-align: justify;" >We provide coustamized services to voried clients.
+      we train our personnel not only to handle pantry 
+      and cleaning task effectively but also maintain proper
+      hygiene.We are backed our dexterous and experienced 
+      professionals for providing our client competitive 
+      and optimum services as per their specific needs.</p>  </div> 
+    </div>
+  </div>
+
+<body>  
+     
+    <div class="container mt-4">
+      <center><h3 style="color: brown; text-shadow:  0 0 25px orange, 0 0 5px orangered;">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;We Provide Our Best Cleaning Services For You In Nagpur</h3></center>
+    </div>
+    <br>
+    <br>
+    <br>
+    <div class="pricing-box-container row">
+      <div class="col-sm-3 button_cont" align="center"><a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">
+      <div class="pricing-box pricing-box-bg-image text-center"  style="background-image: url('../dirt remover/dirt img/art1..jpg');">
+        <h5>.</h5>
+        <p class="price"><sup>.</sup>.<sub>.</sub></p>
+        <ul class="features-list">
+          <p style="color: rgb(57, 0, 0);"><b>
+                   .
+                </b></p>
+        </ul>
+        <button class="btn-primary">Quality work</button>
+     </div>
+     </a></div>
+
+     <div class=" col-sm-3 button_cont" align="center"><a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">
+      <div class="pricing-box pricing-box-bg-image text-center"  style="background-image: url('../dirt remover/dirt img/art2.jpg');">
+        <h5>.</h5>
+        <p class="price"><sup>.</sup>.<sub>.</sub></p>
+        <ul class="features-list">
+          <p style="color: rgb(57, 0, 0);"><b>
+                  .
+                </b></p>
+        </ul>
+        <button class="btn-primary"> Sanitization</button>
+      </div>
+     </a></div>
+   
+     <div class=" col-sm-3 button_cont" align="center"><a class="example_e" href="add-website-here" target="_blank" rel="nofollow noopener">
+
+      <div class="pricing-box pricing-box-bg-image text-center"  style="background-image: url('../dirt remover/dirt img/art3.jpg');">
+        <h5>.</h5>
+        <p class="price"><sup>.</sup>.<sub>.</sub></p>
+        <ul class="features-list">
+          <p style="color: rgb(57, 0, 0);"><b>
+                   .
+               </b> </p>
+        </ul>                 
+        <button class="btn-primary">Budget friendly</button>
+      </div>
+        </a></div>
+    </div>
+
+       <div class="countainer">
+       <div class="container- mt-3">
+       <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+       </head>
+       <body>
+       <div class="pricing-box-container">
+       <div class="y-us-section">
+        <div class="container"> 
+          <center><h1 style="text-align: justify;color: brown; text-shadow:  0 0 25px orange, 0 0 5px orangered; text-align: center;"> WHY CHOOSE US </h1></center><br><br>
+          <div class="row">
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="y-us-content">
+                <div class="service-3">
+                  <div class="service-box">
+                    <div class="clearfix">
+                      <div class="iconset">
+                        <img src="../dirt remover/dirt img/vacuum cleaner.png"  height="90px" width="90px"  alt="">
+                      </div>
+                      <div class="y-us-content">
+                        <h4 style="text-align: justify;">Quality Control</h4>
+                        <p style="text-align: justify;">At dirt remover we put a lot of emphasisi on <br>training on manpower for the requored <br>job skill and behaviour .
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="service-box">
+                    <div class="clearfix">
+                      <div class="iconset">
+                        <img src="../dirt remover/dirt img/clesning sofa.jpg"  height="90px" width="90px"  alt="">
+                      </div>
+                      <div class="y-us-content">
+                        <h4 style="text-align: justify;">Training For Housekeeping Personnel</h4>
+                        <p style="text-align: justify;">At dirt remover we strongly believe that best<br> of result can be achieved only when<br> there is a right combination . </p>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <div class="service-box">
+                    <div class="clearfix">
+                      <div class="iconset">
+                        <img src="../dirt remover/dirt img/cleaning brush.png"  height="90px" width="90px"  alt="">
+                      </div>
+                      <div class="y-us-content">
+                        <h4 style="text-align: justify;">Do What You Are Best At</h4>
+                        <p style="text-align: justify;">In our world ,services means handlying the<br> task that are important to the smooth <br>functioning of an organization</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="why-choose-banner">
+                <img src="../dirt remover/dirt img/choose us.png" height="450px" width="550px"   alt="">
+              </div>
+            </div>
+            <div class="col-md-4 col-sm-6 col-xs-12">
+              <div class="y-us-contentbox">
+                <div class="service-3">
+                  <div class="service-box">
+                    <div class="clearfix">
+                      <div class="iconset">
+                        <img src="../dirt remover/dirt img/cleaning spray bottel.webp"  height="90px" width="90px"  alt="">
+                      </div>
+                      <br>
+                      <br>
+                      <div class="y-us-content">
+                        <h4 style="text-align: justify;">Pantry Service</h4>
+                        <p style="text-align: justify;">whith our expertise in the respective domain,<br>we are providing pantry management services</p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="service-box">
+                    <div class="clearfix">
+                      <div class="iconset">
+                        <img src="../dirt remover/dirt img/cleaning man.png"  height="90px" width="90px"  alt="">
+                      </div>
+                      <div class="y-us-content">
+                        <h4 style="text-align: justify;">pantry Window Service</h4>
+                        <p style="text-align: justify;">The pantry window services offered by us are<br> generally demanded by corporate houses.</p>
+                      </div>
+                    </div>
+                  </div>
+                  <br>
+                  <br>
+                  <div class="service-box">
+                    <div class="clearfix">
+                      <div class="iconset">
+                        <img src="../dirt remover/dirt img/cleaning house.png"  height="90px" width="90px"  alt="">
+                      </div>
+                      <div class="y-us-content">
+                        <h4 style="text-align: justify;">Equipments Tools</h4>
+                        <p style="text-align: justify;">Floor Duster,Table Duster,Glass Duster,<br>Microfiber cloths,Plastic Broon
+                          And Many More... </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+       </div></div>
+       </div>
+       <br>
+       <div class="pricing-box-container" >
+        <div class="pricing-box pricing-box-bg-image text-center"  style="box-shadow: #000000;">
+          <div class="button_cont" align="center"><a class="example_c" href="add-website-here" target="_blank" rel="nofollow noopener">
+          <button class="btn-primary">Quality – Our service</button>
+          <p class="price"><sup></sup><sub></sub></p>
+          <ul class="features-list" >   
+            <p  style="color: rgb(255, 252, 252);text-align: justify;" >
+              Organised professionals who are responsive Intelligent and detailed job sheet system Full-service 
+              family cleaning company – no middlemen. our Equipments & chemicals have been sourced from companies which are not only best but also no.1 in their respective fields.
+                 We strongly believe that best of result can be achieved. </p>
+          </ul>
+        </a></div>
+        </div>
+        <div class="pricing-box pricing-box-bg-image text-center"  style="box-shadow: #000000;">
+          <div class="button_cont" align="center"><a class="example_c" href="add-website-here" target="_blank" rel="nofollow noopener">
+          <button class="btn-primary">Purity – Your health</button>
+          <p class="price"><sup></sup><sub></sub></p>
+          <ul class="features-list">
+            <p style="color: rgb(250, 241, 241);text-align: justify;">
+              We developed our own non-toxic cleaning products called ecoLoveTM.
+              Our strict hygiene policy keeps you and your loved ones safe Hermetically and heat cleaned,
+               fresh microfibre clothes and mop heads used every dayabout something that is clean and unmixed, you are talking about something characterized by purity. 
+                  </p>
+          </ul>
+        </a></div>
+        </div>
+      
+        <div class="pricing-box pricing-box-bg-image text-center"  style="box-shadow: #000000;">
+          <div class="button_cont" align="center"><a class="example_c" href="add-website-here" target="_blank" rel="nofollow noopener">
+          <button class="btn-primary">Honourability – Your Trust</button>
+          <p class="price"><sup></sup><sub></sub></p>
+          <ul class="features-list">
+            <p style="color: rgb(241, 241, 241); text-align: justify;">
+              Quality: If you are not satisfied with any aspect of the service as delivered against the service list and job sheet details, just send
+               a photo within 24 hours to have it re-cleaned. Hygiene: We promise to consciously avoid cross-contamination from one
+                client's home to the next.
+                <br>
+                <br>
+                 </p>
+          </ul>                 
+        </a></div>
+        </div>
+      </div>
+      </div>
+      </div>
+
+      <body>
+       
+        <div class="wrapper" >
+      <ul>
+        <li class="facebook" >
+          <i class="fa fa-facebook" aria-hidden="true"></i>
+     
+        </li>
+            <li class="twitter">
+          <i class="fa fa-twitter" aria-hidden="true"></i>
+        
+        </li>
+        
+        <li class="instagram">
+          <i class="fa fa-instagram" aria-hidden="true"></i>
+        
+        </li>
+        
+            <li class="whatsapp">
+          <i class="fa fa-whatsapp" aria-hidden="true"></i>
+        
+        </li>
+      </ul>
+    </div>
+    </body>
+
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+      <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+      
+      </a>
+   
+
+        
+      
+     
+
+      <footer class="footer">
+        <div class="footer-left col-md-6 col-sm-6 ">
+          <p class="about">
+            <span> About Us</span> At DIRT REMOVER our endeavor is to provide you customized solutions,where scope, 
+           level and the combination of services are carefully adjusted to our customers' specific requirment
+           ,thereby creating a synergy between our people,place,process and technology 
+          </p>
+          <div class="icons">
+            <a href="https://www.facebook.com/profile.php?id=100087893591860"><i class="fa fa-facebook"></i></a>
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-linkedin"></i></a>
+            <a href="#"><i class="fa fa-google-plus"></i></a>
+            <a href="https://www.instagram.com/dirt_remover_nagpur_/"><i class="fa fa-instagram"></i></a>
+          </div>
+        </div>
+        <div class="footer-center
