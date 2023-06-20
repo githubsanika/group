@@ -1,0 +1,733 @@
+<!DOCTYPE html>
+<html>
+  <title>services</title>
+  <link rel="icon" type="image/x-icon" href="../dirt remover/dirt img/dirt_logo-removebg-preview.png">
+    <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+      @media only screen and (max-width: 600px) {
+  body {
+    background-color: #f6f5f7;
+font-family: 'Open Sans', sans-serif;
+margin-bottom: 50px;
+  }
+}
+    </style>
+        <style>
+          *{
+              padding: 0px;
+              margin: 0px;
+          }
+          .header{
+              position:sticky;
+              top:0px;
+              background-image: linear-gradient( 90deg , rgb(231, 113, 9) 100px, rgba(228, 172, 58, 0.937));
+              border-bottom: 4px solid brown ;
+              padding-right:20px;
+              padding-left:50px ;
+              display: flex;
+              justify-content: space-between;
+              align-items: center;
+          }
+          
+          @media (min-width: 1500px) {
+          header{
+              padding-right: 10%;
+              padding-left: calc( 10% - 20px);
+          }
+          }
+            
+                </style>
+        <style>
+        
+        * {
+          box-sizing: border-box;
+        }
+        
+        .bg-image {   
+          background-image: url("/dirt1.jpg");
+          filter: blur(8px);
+          -webkit-filter: blur(8px); 
+          height:100% ;
+          background-position:center;
+          background-repeat:no-repeat;
+          background-size:cover;
+           
+        }
+        
+     
+        .bg-text {
+          background-color: rgb(0,0,0); 
+          background-color: rgba(0,0,0, 0.4); 
+          color: white;
+          font-weight: bold;
+          border: 3px solid #f1f1f1;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          transform: translate(-50%, -50%);
+          z-index: 2;
+          width: 80%;
+          padding: 20px;
+          text-align: center;
+        }
+        </style>
+        </head>
+        <style>
+          .img {
+              --color: #b7a520; 
+              --border: 3px;   /* the border thickness*/
+              --offset: 20px;   /* control the offset*/
+              --gap: 5px;      
+              
+              --_c: var(--color) var(--border), #0000 0 calc(100% - var(--border)),var(--color) 0;
+              --_o: calc(3*var(--offset));
+              padding: 
+                calc(var(--gap) + var(--border))
+                calc(var(--gap) + var(--border) + var(--offset))
+                calc(var(--gap) + var(--border) + var(--offset))
+                calc(var(--gap) + var(--border));
+              background: 
+                linear-gradient(      var(--_c)) var(--_o) var(--_o), 
+                linear-gradient(90deg,var(--_c)) var(--_o) var(--_o);
+              background-size: calc(100% - var(--_o)) calc(100% - var(--_o));
+              background-repeat: no-repeat;
+            
+              transition: .5s;
+              cursor: pointer;
+            }
+            .img:hover {
+              background-position: 0px 0px;
+              background-size: calc(100% - var(--offset)) calc(100% - var(--offset));
+              filter: grayscale(0);
+            }
+            </style>
+            <style>
+              table{
+                  text-align: center;
+                  border-radius: 20px;
+                  box-shadow: 0px 0px 4px 4px rgb(108, 105, 105);
+                  cursor: pointer;
+                  box-sizing: content-box;
+              }
+          
+              td{
+                  border-radius:30px 5px 30px 5px;
+                  box-shadow: 0px 0px 4px 4px rgb(108, 105, 105);
+              }  
+          </style>
+<style>
+
+footer {
+  background-color: #414141;
+  width: 100%;
+  text-align: left;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+  padding: 50px;
+  margin-top: 50px;
+}
+
+.footer .footer-left,
+.footer .footer-center,
+.footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+
+/* footer left*/
+
+.footer .footer-left {
+  width: 33%;
+  padding-right: 15px;
+}
+
+.footer .about {
+  line-height: 20px;
+  color: #ffffff;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+  text-align: justify;
+}
+
+.footer .about span {
+  display: block;
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.footer .icons {
+  margin-top: 25px;
+}
+
+.footer .icons a {
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color: #33383b;
+  border-radius: 2px;
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+
+
+/* footer center*/
+
+.footer .footer-center {
+  width: 30%;
+}
+
+.footer .footer-center i {
+  background-color: #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+
+.footer .footer-center i.fa-envelope {
+  font-size: 17px;
+  line-height: 38px;
+}
+
+.footer .footer-center p {
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin: 0;
+}
+
+.footer .footer-center p span {
+  display: block;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 2;
+}
+
+.footer .footer-center p a {
+  color: #ea6a15;
+  text-decoration: none;
+}
+
+
+/* footer right*/
+
+.footer .footer-right {
+  width: 35%;
+}
+
+.footer h2 {
+  color: #ffffff;
+  font-size: 36px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.footer h2 span {
+  color: #ff8000;
+}
+
+.footer .menu {
+  color: #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+.footer .menu a {
+  display: inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer .menu a:hover {
+  color: #ff9500;
+}
+
+.footer .name {
+  color: #0099ff;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+
+@media (max-width: 767px) {
+  .footer {
+    font-size: 14px;
+  }
+  .footer .footer-left,
+  .footer .footer-center,
+  .footer .footer-right {
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    text-align: center;
+  }
+  .footer .footer-center i {
+    margin-left: 0;
+  }
+}
+</style>             
+<style>
+
+  .wrapper {
+    position: fixed;
+    top: 80%;
+    left: 90%;
+
+    transform: translate(-50%, -50%);
+  } 
+  ul {
+    list-style: none;
+  } 
+ ul li {
+    width: 50px;
+    height: 50px;
+    position: relative;
+    background: #e59500;
+    margin: 10px 0;
+    cursor: pointer;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  } 
+  ul li .fa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 20px;
+    color: #fff;
+  } 
+  ul li.facebook{
+    background: #3b5998;
+  } 
+  ul li.twitter{
+    background: #00aced;
+  } 
+  ul li.instagram{
+    background: #cb2c39;
+  } 
+   
+  ul li.whatsapp{
+    background: #4dc247;
+  } 
+  
+  </style>
+<style>
+  @media (max-width: 767px) {
+
+}
+
+@media only screen and (max-width: 768px) {
+ 
+  [class*="header"]
+  [class*="container-fluid"]
+  [class*="text-align: text-justify: ;;"] 
+
+  {
+    width: 100%; 
+  }
+  
+}
+@media screen  and (max-width: 300px)
+{
+  [class*="col-sm-3"]
+  {
+    font-family: justify;
+  }
+}
+.pic{
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  margin-bottom: -4px;
+}
+</style>
+<style>
+  
+.f{
+    margin-top: 45px;
+    border-radius: 25px;
+    margin-left: 0px;
+  }
+  .p {
+    padding-bottom: 70px;
+    color: black;
+    margin-top: 400px;
+    margin-right: 0px;
+    margin-left: -400px;
+    margin: 0px 10px 0px 20px;
+    text-align: justify;
+}
+</style>             
+<style>
+  .blink-1 {
+    animation-name: blink;
+    animation-timing-function: linear;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    text-decoration-color: #000;
+    font: size 10px;
+   
+  }
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  </style>
+  <script>
+  function blinker() {
+    $('.jquery_blink').fadeOut(500);
+    $('.jquery_blink').fadeIn(500);
+  }
+  
+  
+  setInterval(blinker, 1000);
+  </script> 
+
+
+
+<nav class="navbar navbar-expand-sm bg-warning navbar-dark fixed-top header">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#"><img src="../dirt remover/dirt img/dirt_logo-removebg-preview.png"  height="80" width="100"></a>
+    <center>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse"  id="collapsibleNavbar">
+      <div class="navbar-nav">
+       
+        <li class="nav-item">
+          <a class="nav-link" style="color:#0a0a0a ;" href="../dirt remover/index.html"><h4>Home</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:#060606 ;" href="../dirt remover/about.html"><h4>About</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:#080808 ;" href="../dirt remover/services.html"><h4>Services</h4></a>
+        </li>    
+        <li class="nav-item">
+          <a class="nav-link" style="color:#070707 ;" href="../dirt remover/contact.html"><h4>Contact</h4></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" style="color:brown ; font-size: 10%;" href="../dirt remover/services.html"><h4 class="blink-1">Book Now!</h4><br></a>
+        </li> 
+      </div>
+    </div></center>
+  </div>
+</nav>
+<div class="example">
+  <img src="../dirt remover/dirt img/services final.png" />
+  <p class="typewriter" style="color:rgb(0, 0, 0)" >Dust busters on call.</p>	
+</div>
+<style>
+  .example {
+  position: relative;
+  }
+
+.example p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-weight: bold;
+  font-size: 3em;
+  font-family :Quicksand, sans-serif;
+  }
+
+.example img {
+  width: 100%;
+  }
+ 
+
+
+.typewriter {
+width: 17.5ch;
+white-space: nowrap;
+overflow: hidden;
+border-right: 3px solid #212121;
+animation: cursor 1s step-start infinite, 
+  text 5s steps(18) alternate infinite;
+  color: #000;
+}
+
+
+@keyframes cursor {
+0%, 100% { 
+  border-color: #212121; 
+}
+}
+
+@keyframes text {
+0% { 
+  width: 0; 
+}
+100% { 
+  width: 18.5ch; 
+}
+}
+</style>
+
+            
+
+            <nav class="navbar navbar-expand-sm bg-light navbar-dark  ">
+              <div class="container ">
+                <a class="navbar-brand col-md-5" href="#"><img src="../dirt remover/dirt img/mechanized.webp" class="img-thumbnail f" width="550" height="150" hspace="40"></a>
+                <center>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div  id="collapsibleNavbar col-md-7">
+                  <div class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" ></a> 
+                      <div class="col lg-6 p ">
+                        <h1 style="color: brown; text-shadow:  0 0 25px orange, 0 0 5px orangered; "> Mechanized House Keeping</h1>
+                        <br><br><p style="text-align: justify; " >Mechanized Cleaning involves cleaning & maintenance of
+                           residential as well as commercial complexes such as malls, 
+                        Hospitals, IT Parks, industrial premises, educational institutions
+                        , and other corporates. The main objective of companies offering mechanized housekeeping services is to create 
+                        a clean and hygienic environment..Mechanized housekeeping services include everything from dusting and moping to
+                         cleaning of floors, window panels, glasses, floor scrubbing, floor polishing, vacuum cleaning, machine cleaning 
+                         and maintenance, pest control and fumigation in an apt manner. The said tasks are performed by trained professionals who efficiently perform all sorts of cleaning works of residences, offices and hotels.
+          
+                      </p>
+                </div>  
+                    </li>
+                    </li>
+                  </div>
+                </div></center>
+              </div>
+            </nav>
+
+
+
+            <nav class="navbar navbar-expand-sm bg-light navbar-dark  ">
+              <div class="container ">
+              
+                <div  id="collapsibleNavbar col-md-7">
+                  <div class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" ></a> 
+                      <div class="col lg-6 p ">
+                        <h1 style="color: brown; text-shadow:  0 0 25px orange, 0 0 5px orangered;"> Facade Cleaning</h1>
+                        <br><br> <p style="text-align:justify "    > In short, facade cleaning is the process of making sure the exterior of a building is clear of any dirt, grime, stains,
+                         and pollutants. The facade usually refers to the front part of the building where the entrance is located.
+            
+                        Some of the most popular materials used for building facades include glass, stone, and wood, although some properties may feature
+                         facades made from metals such as stainless steel or aluminium.</p>
+                        
+                        </p> 
+                      </div>
+                    </li>
+                    </li>
+                  </div>
+                </div></center>
+                
+                  <a class="navbar-brand col-md-5" href="#"><img src="../dirt remover/dirt img/facadecleaning.webp" class="img-thumbnail f" width="550" height="150" hspace="40"></a>
+                  <center>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+              </div>
+            </nav>
+
+            <nav class="navbar navbar-expand-sm bg-light navbar-dark  ">
+              <div class="container ">
+                <a class="navbar-brand col-md-5" href="#"><img src="../dirt remover/dirt img/landscaping.jpg" class="img-thumbnail f" width="550" height="150" hspace="40"></a>
+                <center>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              
+                <div  id="collapsibleNavbar col-md-7">
+                  <div class="navbar-nav">
+                    <li class="nav-item">
+                      <a class="nav-link" ></a> 
+                      <div class="col lg-6 p ">
+                        <h1 style="color: brown; text-shadow:  0 0 25px orange, 0 0 5px orangered;"> Landscaping</h1>
+                        <br><br> <p style="text-align: justify;"     >   Landscape maintenance (or groundskeeping) is the art and vocation of keeping a landscape healthy, clean, safe 
+                        and attractive, typically in a garden, yard, park, institutional setting or estate. Using tools, supplies, knowledge
+                        , physical exertion and skills, a groundskeeper may plan or carry out annual plantings and harvestings, periodic weeding
+                         and fertilizing, other gardening, lawn care, snow removal, driveway and path maintenance, shrub pruning, topiary, lighting,
+                          fencing, swimming pool care, runoff drainage, and irrigation, and other jobs for protecting and improving the topsoil, plants
+                          , and garden accessories..</p>
+          
+                </div>  
+                    </li>
+                    </li>
+                  </div>
+                </div></center>
+              </div>
+            </nav>
+
+
+
+
+
+
+   <br>
+   <nav class="navbar navbar-expand-sm bg-light navbar-dark  ">
+    <div class="container ">
+    
+      <div  id="collapsibleNavbar col-md-7">
+        <div class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" ></a> 
+            <div class="col lg-6 p ">
+              <h1 style="color: brown; text-shadow:  0 0 25px orange, 0 0 5px orangered;"> Valet Parking Services</h1>
+              <br><br>
+              <p style="text-align: justify;"  > In short, facade cleaning is the process of making sure the exterior of a building is clear of any dirt, grime, stains,
+               and pollutants. The facade usually refers to the front part of the building where the entrance is located.
+  
+              Some of the most popular materials used for building facades include glass, stone, and wood, although some properties may feature
+               facades made from metals such as stainless steel or aluminium.
+              </p>
+            </div>
+          </li>
+          </li>
+        </div>
+      </div></center>
+      
+        <a class="navbar-brand col-md-5" href="#"><img src="../dirt remover/dirt img/valet.jpg" class="img-thumbnail f" width="550" height="150" hspace="40"></a>
+        <center>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+    </div>
+  </nav>
+  <br>
+  <body >
+    <br>
+    <br>
+    <center><h1 style="color: brown; text-shadow:  0 0 25px orange, 0 0 5px orangered;">Providing Services  </h1></center>
+    <br>
+  <center>  
+    <div class="container-fluid">
+
+      <div class="col lg-5 container-fluid  " >
+        <img class="img" src="../dirt remover/dirt img/baniqute hall.webp" height="250" width="259" style="--color:orange" >
+      <img class="img" src="../dirt remover/dirt img/colleges.webp" height="250" width="259" style="--color:orange">
+      <img class="img" src="../dirt remover/dirt img/flats.jpg" height="250" width="259" style="--color:orange">
+      <img class="img" src="../dirt remover/dirt img/gamezone.jpg" height="250" width="259" style="--color:orange">
+     
+      
+      <div class="div1">
+      <img class="img" src="../dirt remover/dirt img/hospital.webp" height="250" width="259" style="--color:orange">
+      <img class="img" src="../dirt remover/dirt img/hotels.jpg" height="250" width="259" style="--color:orange">
+      <img class="img" src="../dirt remover/dirt img/mall.webp" height="250" width="259" style="--color:orange">
+      <img class="img" src="../dirt remover/dirt img/offices.jpg" height="250" width="259" style="--color:orange">
+      
+      <br>
+      <div>
+      <img class="img" src="../dirt remover/dirt img/pub.webp" height="250" width="259" style="--color:orange">
+      <img class="img" src="../dirt remover/dirt img/showrooms.jpg" height="250" width="259" style="--color:orange">
+      <img class="img" src="../dirt remover/dirt img/waterpark.webp" height="250" width="259" style="--color:orange">
+      <img class="img" src="../dirt remover/dirt img/othershops.webp" height="250" width="259" style="--color:orange">
+   
+     </div>
+</div>
+
+</center>
+<br>
+<br>
+   </div>
+   <body>
+       
+    <div class="wrapper" >
+  <ul>
+    <li class="facebook" >
+      <i class="fa fa-facebook" aria-hidden="true"></i>
+ 
+    </li>
+        <li class="twitter">
+      <i class="fa fa-twitter" aria-hidden="true"></i>
+    
+    </li>
+    
+    <li class="instagram">
+      <i class="fa fa-instagram" aria-hidden="true"></i>
+    
+    </li>
+    
+        <li class="whatsapp">
+      <i class="fa fa-whatsapp" aria-hidden="true"></i>
+    
+    </li>
+  </ul>
+</div>
+</body>
+   <br>
+   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+   <a href="https://api.whatsapp.com/send?phone=51955081075&text=Hola%21%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20Varela%202." class="float" target="_blank">
+  
+   </a>
+   <footer class="footer">
+    
+            <div class="footer-left col-md-4 col-sm-6">
+              <p class="about">
+                <span> About Us</span>At DIRT REMOVER our endeavor is to provide you customized solutions,where scope, 
+                level and the combination of services are carefully adjusted to our customers' specific requirment
+              ,thereby creating a synergy between our people,place,process and technology 
+              </p>
+              <div class="icons">
+                <a href="https://www.facebook.com/profile.php?id=100087893591860"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-linkedin"></i></a>
+                <a href="#"><i class="fa fa-google-plus"></i></a>
+                <a href="https://www.instagram.com/dirt_remover_nagpur_/"><i class="fa fa-instagram"></i></a>
+              </div>
+            </div>
+            <div class="footer-center col-md-4 col-sm-6">
+              <div>
+                <i class="fa fa-map-marker"></i>
+                <p style="color: white;"><span> <b>158/B,Yogeshwar Nagar </b> </span> Nagpur-440033
+              </div>
+              <div>
+                <i class="fa fa-phone"></i>
+                <p> (+91) 9850318506</p><br>
+                
+              </div>
+              <div>
+                <i class="fa fa-envelope"></i>
+                <p><a href="#"> mailto:dirtremovernagpur@gmail.com</a></p>
+              </div>
+            </div>
+            <div class="footer-right col-md-4 col-sm-6">
+              <h2> Dirt Remover<span> <img src="../dirt remover/dirt img/dirt_logo-removebg-preview.png" width="150px" height="100px"  alt=""></span></h2>
+              <p class="menu">
+                <a href="../dirt remover/home.html"> Home</a> &nbsp;
+                <a href="../dirt remover/about.html"> About</a> &nbsp;
+                <a href="../dirt remover/services.html"> Services</a> &nbsp;             
+                <a href="../dirt remover/contact.html"> Contact</a>&nbsp;
+              </p>  
+            </div>
+          </footer>
+    </body>
+</html>
